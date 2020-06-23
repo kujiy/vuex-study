@@ -30,19 +30,11 @@ const store = new Vuex.Store({
           namespaced: true,
           state: {
               count: 0,
-              mymsgDict: "BBBBBBB mymsgDict init",
-              mymsg: " BBBBBBBB mymsg init"
           },
           mutations: {
               increment(state) {
                   state.count++
               },
-              setMsgDict(state, payload) {
-                  state.mymsgDict = payload.message;
-              },
-              setMsg(state, payload) {
-                  state.mymsg = payload;
-              }
           }
       }
   }
